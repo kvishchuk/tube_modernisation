@@ -1,0 +1,30 @@
+a.button {
+	text-align: center;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 4px;
+	padding: 0.5rem;
+	
+	display: inline-block;
+	min-width: 10rem;
+	max-width: 10rem;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+
+	
+
+	box-shadow: 0px 0px 4px -2px black;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+}
+
+a.attract {
+	border: 1px solid rgb(231, 76, 60);
+	background-color: rgb(231, 76, 60);
+
+	&:hover {
+		background-color: rgba(231, 76, 60, 0.6);
+	}
+}
