@@ -1,5 +1,6 @@
 section.section-1 {
 	padding: 0;
+	background-color: #fff;
 	
 	div#anchor {
 		position: absolute;
@@ -13,7 +14,7 @@ section.section-1 {
 			background-color: #eaeaea;
 			padding: .7rem;
 			border-radius: 100%;
-			border: 5px solid rgba(66, 66, 66, 0.27);
+			border: 5px solid rgba(255, 255, 255, 0.24);
 			background-clip: padding-box;
 		}
 	}
@@ -25,7 +26,7 @@ section.section-1 {
 		
 
 		div.skew {
-			background-color: #f4f5f9;
+			background-color: #fff;
 			height: 200px;
 			position: absolute;
 			top: 0px;
