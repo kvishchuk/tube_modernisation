@@ -1,0 +1,31 @@
+div.divider {
+	max-width: 11rem;
+	margin: auto;
+	position: relative;
+
+	p {
+		text-align: center;
+		
+		color: rgb(231, 76, 60);
+
+		&:before {
+		    position: absolute;
+			top: 59%;
+			left: 0;
+			width: 43%;
+			height: 1px;
+			content: '';
+			background-color: #d1d1d1;
+		}
+
+		&:after {
+			position: absolute;
+			top: 59%;
+			right: 0;
+			width: 43%;
+			height: 1px;
+			content: '';
+			background-color: #d1d1d1;
+		}
+	}
+}

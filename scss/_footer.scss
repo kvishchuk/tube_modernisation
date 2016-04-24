@@ -1,0 +1,50 @@
+footer#footer {
+	position: relative;
+	background-color: #202020;
+	z-index: 2;
+	padding: 1rem;
+
+
+	a {
+		padding-right: 1rem;
+		color: #7A7A7A;
+		text-decoration: none;
+	}
+
+	li {
+		list-style-type: none;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+
+	div#footer-container {
+		max-width: 70rem;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		ul#social {
+			display: flex;
+
+			li {
+
+				a {
+					font-size: 1.3rem;
+				}
+			}
+		}
+
+		ul#developers {
+
+			li {
+
+				a {
+					font-size: .8rem;
+				}
+			}
+		}
+	}
+}
