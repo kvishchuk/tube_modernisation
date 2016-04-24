@@ -6,84 +6,237 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 </head>
 <body>
 	<header id="header">
-		<nav id="navigation">
-			<a href="#" class="nav-element">
-				<div>
-					<p>Про мене</p>
-				</div>
-			</a>
-			<a href="#" class="nav-element">
-				<div>
-					<p>Про роботу</p>
-				</div>
-			</a>
-			<a href="#" class="nav-element">
-				<div>
-					<p>Скачати роботу</p>
-				</div>
-			</a>
-			<a href="#" class="nav-element">
-				<div>
-					<p>Графіки</p>
-				</div>
-			</a>
-			<a href="#" class="nav-element">
-				<div>
-					<p>Контакти</p>
-				</div>
-			</a>
-		</nav>
-		<div id="header-text-wrap">
-			<div id="header-text">
-				<h4>Курсовий проект на тему</h4>
-				<h1>МОДЕРНІЗАЦІЯ ТЮБІНГОУКЛАДЧИКА</h1>
-				<p>
-					Lorem ipsum dolor sit amet, nec no lucilius aliquando, ullum similique quo ex, qui ut erant graece. Etiam singulis at mea, vel inermis accusam an.
-				</p>
-				<div class="button pushed">
-					<p>Скачати роботу</p>
-				</div>
-				<div class="button">
-					<p>Про роботу</p>
+		<div id="header-container">
+			<nav id="navigation">
+				<a href="#about" class="nav-element">
+					Про мене
+				</a>
+				<a href="#work" class="nav-element">
+					Про роботу
+				</a>
+				<a href="#" class="nav-element">
+					Скачати роботу
+				</a>
+				<a href="#media" class="nav-element">
+					Креслення
+				</a>
+				<a href="#" class="nav-element">
+					Контакти
+				</a>
+			</nav>
+			<div id="header-text-wrap">
+				<div id="header-text">
+					<h4>Курсовий проект на тему</h4>
+					<h1>МОДЕРНІЗАЦІЯ ТЮБІНГОУКЛАДЧИКА</h1>
+					<div class="divider">
+						<p>&#9679</p>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, nec no lucilius aliquando, ullum similique quo ex, qui ut erant graece. Etiam singulis at mea, vel inermis accusam an.
+					</p>
+					<a href="#" class="button attract">
+						<p>Скачати роботу</p>
+					</a>
+					<a href="#" class="button">
+						<p>Про роботу</p>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div id="header-bg">
-			 <video width="100%" height="100%" autoplay loop>
+			 <video width="100%" height="100%" autoplay loop id="header-video">
 				<source src="video/header_video.mp4" type="video/mp4">
 			</video> 
 		</div>
 	</header>
-	<section class="section section-1">
+	<section class="section section-1" id="about">
 		<div id="anchor">
 			<i class="fa fa-anchor fa-2x" aria-hidden="true"></i>
 		</div>
 		<div id="shape-container">
-			<div id="left-skew"></div>
-			<div id="right-skew"></div>
+			<div class="left-skew skew"></div>
+			<div class="right-skew skew"></div>
 		</div>
 		<div id="about-me">
 			<div id="face">
-				<img src="#" alt="">
+				<img src="img/face.jpg" alt="">
 			</div>
 			<div id="about-me-text">
-				<h2></h2>
-				<p></p>
-				<div class="button pushed">
-					<p></p>
-				</div>
+				<h2 class="title">Про мене</h2>
+				<p>
+					Lorem ipsum dolor sit amet, ad quo invidunt intellegebat, eum saepe tollit perfecto an. Ex duo veritus facilisi, his possit veritus cu. Paulo nihil luptatum et vel, te quo vocent iuvaret inimicus. Ut euripidis disputationi nam, id sed dolorum facilis abhorreant.
+
+					Cu imperdiet inciderint nec, vidisse fierent abhorreant vix ex. Rebum fugit per id. Te ius esse mundi, te has paulo dolores democritum. Sonet bonorum tincidunt id vix, ad est saepe voluptatum. An veri cetero patrioque sea, mei ei omnis fastidii definitionem, no sea graece suscipiantur.
+
+					Lorem ipsum dolor sit amet, ad quo invidunt intellegebat, eum saepe tollit perfecto an. Ex duo veritus facilisi, his possit veritus cu. Paulo nihil luptatum et vel, te quo vocent iuvaret inimicus. Ut euripidis disputationi nam, id sed dolorum facilis abhorreant.
+				</p>
+				<a href="#" class="button attract">
+					Скачати роботу
+				</a>
 			</div>
 		</div>
 	</section>
-	<section class="section section-2">
-		
+	<section class="section section-2" id="media">
+		<h2>
+			Креслення
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet, ad quo invidunt intellegebat, eum saepe tollit perfecto an.
+		</p>
+		<div class="divider">
+			<p>&#9679</p>
+		</div>
+		<div id="picture-container">
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3>Приклад 1</h3>
+						<p>зростання на 20%</p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-9.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-8.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-7.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-2.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-6.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-5.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-4.jpg" alt="">
+			</a>
+			<a href="#" class="picture-element">
+				<div class="picture-text-wrap">
+					<div class="absolute-text">
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+				<img src="http://lorempixel.com/image_output/technics-q-c-640-480-3.jpg" alt="">
+			</a>
+		</div>
 	</section>
-	<section class="section section-3"></section>
-	<section class="section section-4"></section>
+	<section class="section section-3" id="work">
+		<h2>
+			Про роботу
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet, ad quo invidunt intellegebat, eum saepe tollit perfecto an.
+		</p>
+		<div class="divider">
+			<p>&#9679</p>
+		</div>
+		<div id="work-text">
+			<p>
+				Ex atqui doctus sea, legere disputationi te vel, lorem numquam sed et. Vim perpetua argumentum honestatis ad, eam mnesarchum moderatius an, dissentiunt definitionem ad nam. His nostrud dissentiunt ut, ea amet nulla legendos mei. Duo eu utroque oporteat recteque, malis quidam vis ea. Utamur vituperata scriptorem no per, ea illud nonumes placerat usu. Eu mei agam elitr recteque, sanctus elaboraret nam et.
+
+				At ridens quaestio sit. Mel te summo quodsi, ut deseruisse suscipiantur qui. Dicta iuvaret maiorum qui id, ad vel ceteros copiosae. At eos simul adversarium, mel cu novum ceteros, luptatum verterem no eos. Pri melius consequuntur interpretaris in, an fugit ignota timeam sit, quem verear neglegentur his ut.
+			</p>
+		</div>
+	</section>
+	<section class="section section-4" id="contacts">
+		<h2>
+			Напишіть мені
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet, ad quo invidunt intellegebat, eum saepe tollit perfecto an.
+		</p>
+		<div class="divider">
+			<p>&#9679</p>
+		</div>
+		<div id="contacts-flex-container">
+			<div id="contacts-block">
+				<h2>
+					Мій адрес
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet <br>
+					invidunt intellegebat
+				</p>
+				<h2>
+					Мій номер
+				</h2>
+				<p>
+					+3801234567
+				</p>
+				<h2>
+					Моя пошта
+				</h2>
+				<p>
+					qwerty@gmail.com
+				</p>
+				<a href="#" class="button attract">
+					Написати листа
+				</a>
+			</div>
+		</div>
+	</section>
 	<section class="section section-5"></section>
 	<footer id="footer"></footer>
+	<script>
+		// регулювання швидкості відтворення відео
+		// function speed(x){
+		//         var myVid=document.getElementById("header-video");
+		// 	myVid.playbackRate=x;
+		// }
+		// speed(0.1);
+	</script>
+	<script>
+		$('a').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+	</script>
 </body>
 </html>

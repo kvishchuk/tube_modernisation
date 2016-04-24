@@ -2,37 +2,75 @@ header#header {
 		min-height: 100%;
 		color: #d1d1d1;
 
-		nav#navigation {
-			display: flex;
-			justify-content: center;
-
-			padding: 2rem 0;
-
-			a.nav-element {
-				color: #d1d1d1;
-				text-decoration: none;
-
-				div {
-					padding: 1rem;
-				}
-			}
-		}
-
-		div#header-text-wrap {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-
+		div#header-container {
+			position: fixed;
+			height: 100%;
 			width: 100%;
 
-			div#header-text {
-				margin: auto;
-				text-align: center;
-    			max-width: 36rem;
+			z-index: 1;
 
-    			h1 {
-    				font-size: 3rem;
-    			}
+			nav#navigation {
+				display: flex;
+				justify-content: center;
+
+				padding: 2rem 0;
+
+				a.nav-element {
+					color: #d1d1d1;
+					text-decoration: none;
+					padding: .9rem;
+					margin: .1rem;
+					position: relative;
+
+					&:hover {
+						color: #d1d1d1;
+					}
+
+					&:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 2px;
+						bottom: 0;
+						left: 0;
+						background-color: rgb(231, 76, 60);
+						visibility: hidden;
+						transform: scaleX(0);
+						transition: all 0.3s ease-in-out 0s;
+					}
+
+					&:hover:before {
+						visibility: visible;
+						transform: scaleX(1);
+					}
+				}
+			}
+
+			div#header-text-wrap {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+
+				width: 100%;
+
+				div#header-text {
+					margin: auto;
+					text-align: center;
+	    			max-width: 36rem;
+
+	    			h1 {
+	    				font-size: 3rem;
+	    			}
+
+	    			>p {
+	    				margin-bottom: 3rem;
+	    				margin-top: .6rem;
+	    			}
+
+	    			a.button {
+	    				margin: 0 1rem;
+	    			}
+				}
 			}
 		}
 
@@ -44,8 +82,8 @@ header#header {
 			top: 0;
 			right: 0;
 
-			z-index: -1;
-			filter: brightness(0.5);
+			z-index: 0;
+			filter: brightness(20%);
 
 			video {
 				object-fit: cover;
