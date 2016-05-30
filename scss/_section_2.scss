@@ -5,13 +5,18 @@ section.section-2 {
 	
 	>p {
 		padding: 1rem 0px;
+
+	    max-width: 43rem;
+	    margin: auto;
 	}
 
 	div#picture-container {
 		display: flex;
 		flex-wrap: wrap;
 
-		padding-top: 5rem;
+		margin-top: 5rem;
+
+		border: 1px solid rgba(231,76,60,0.7);
 
 		a.picture-element {
 			position: relative;
